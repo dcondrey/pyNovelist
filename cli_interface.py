@@ -29,6 +29,14 @@ def edit_file(filename):
     except Exception as e:
         logging.error(f"Failed to open file {filename}: {e}")
 
+def main_menu():
+    print("Main Menu:")
+    print("1. Generate Synopsis and Character Sheets")
+    print("2. Generate Chapter Outline")
+    print("3. Export Content as PDF")
+    print("4. Exit")
+
+
 def run_interactive_session():
     while True:
         main_menu()
